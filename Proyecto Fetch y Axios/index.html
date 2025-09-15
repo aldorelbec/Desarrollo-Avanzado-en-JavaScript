@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparando Fetch y Axios</title>
+    
+    <!-- Tailwind CSS para un diseño moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Axios desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-900">Consumo de APIs con Fetch y Axios</h1>
+            <p class="text-lg text-gray-600 mt-2">Obtén personajes de la API de Rick & Morty para comparar ambas herramientas.</p>
+        </header>
+
+        <!-- Contenedor de botones -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button id="fetch-btn" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                Obtener con Fetch
+            </button>
+            <button id="axios-btn" class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 ease-in-out">
+                Obtener con Axios
+            </button>
+        </div>
+
+        <!-- Loader para feedback visual -->
+        <div id="loader" class="hidden flex justify-center items-center my-10">
+            <div class="loader border-t-4 border-blue-500 rounded-full w-12 h-12"></div>
+        </div>
+
+        <!-- Contenedor para mostrar los datos de la API -->
+        <div id="data-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Las tarjetas de los personajes se insertarán aquí -->
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
