@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivina el Número</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Adivina el Número</h1>
+        <p>Estoy pensando en un número entre 1 y 100. ¿Puedes adivinarlo?</p>
+
+        <form id="guessForm">
+            <label for="guessInput">Ingresa tu suposición:</label>
+            <input type="number" id="guessInput" min="1" max="100" required>
+            <button type="submit">Adivinar</button>
+        </form>
+
+        <p id="message"></p>
+        <p>Intentos restantes: <span id="attempts"></span></p>
+
+        <div id="history">
+            <h3>Historial de intentos:</h3>
+            <ul id="guessList"></ul>
+        </div>
+
+        <button id="resetButton" style="display: none;">Jugar de Nuevo</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
