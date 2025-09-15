@@ -1,0 +1,13 @@
+{
+  "name": "taller-planetas-favoritos",
+  "version": "1.0.0",
+  "description": "Una aplicación de Node.js para registrar planetas favoritos.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "iniciar": "node app.js"
+  },
+  "author": "Tu Nombre",
+  "license": "ISC"
+}
